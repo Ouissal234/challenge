@@ -1,0 +1,253 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Alata",  sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    position: absolute;
+    display: flex;
+    padding-top: 50px;
+    gap: 90%;
+    
+}
+header img{
+    width: 200px;
+    height: 50px;
+    z-index: 1;
+    margin-left: 90px;
+}
+ul{
+    display: flex;
+gap: 40px;
+z-index: 1;
+
+}
+.section1{
+    background-image: url(desktop/image-hero.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+.section1 h1{
+    font-family: "Josefin Sans", serif;
+font-weight:  300;
+font-size: 70px;
+    color: white;
+padding-top: 20px;
+border: 2px solid white;
+margin-top: 20%;
+padding-left: 20px;
+width: 600px;
+height: 250px;
+position: absolute;
+margin-left: 20%;
+
+}
+.section2{
+    display: flex;
+   
+}
+.section2 h1{
+    font-family: "Josefin Sans", serif;
+    font-weight:  300;
+    font-size: 40px;
+}
+.section2 p{
+  color: hsl(0, 0%, 55%); 
+  font-weight:  400;
+  font-size: 20px;
+}
+.leader{
+    background-color: white;
+    margin-right: 20px;
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 25%;
+    width: 600px;
+    height: 320px;
+    padding-left: 60px;
+    padding-top: 40px;
+   
+}
+.se-img img{
+   position: relative;
+    margin-left: 30%;
+    margin-top: 20%;
+}
+.section3{
+    margin-top: 9%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 70px;
+}
+.section3 h1{
+    font-family: "Josefin Sans", serif;
+    font-weight:  300;
+    font-size: 35px;
+}
+.section3 button{
+    width: 140px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: white;
+}
+.disktop{
+    display: grid;
+    grid-template-columns: repeat(4,300px);
+    row-gap: 90px;
+    margin-left: 180px;
+    margin-bottom: 150px;
+}
+.section4 p{
+    position: relative;
+    color: white;
+    font-family: "Josefin Sans", serif;
+    font-weight:  300;
+    font-size: 25px;
+    padding-top: 350px;
+    padding-left: 20px;
+}
+
+.section4 img{
+    position: absolute;
+}
+footer{
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+footer p{
+ color:hsl(0, 0%, 55%) ;
+ margin-top: 30px;
+}
+.loo{
+    margin-top: 50px;
+    padding-left: 60px;
+}
+.loo ul{
+    margin-top: 20px;
+}
+.foot{
+    display: flex;
+    flex-direction: column;
+}
+.social{
+    display: flex;
+    margin-top: 50px;
+    gap: 20px;
+}
+.mobile{
+    display: none;
+}
+@media (max-width:375px){
+    header img{
+        width: 90px;
+        height: 30px;
+        margin-left: 70px;
+    }
+    header ul{
+        display: none;
+    }
+    .section1 h1{
+        margin-top: 140px;
+        width: 250px;
+        height: 200px;
+        margin-left: 65px;
+        font-size: 35px;
+        padding-left: 5px;
+    }
+    .section1{
+        height: 450px;
+    }
+    .section2{
+        height: 500px;
+    }
+    .se-img img{
+        width:250px ;
+        margin-left:65px ;
+     }
+     .leader{
+        width: 250px;
+        height: 200px;
+        margin-left: 65px;
+        padding-left: 5px;
+        margin-top: 250px;
+     }
+     .section2 h1{
+        font-size: 20px;
+    }
+    .section2 p{
+      font-size: 15px;
+      margin-top: 20px;
+      
+    }
+    button{
+        display: none;
+    }
+    .section3 h1{
+        font-size: 25px;
+        margin-top: 20px;
+    }
+    .disktop{
+        display: none;
+    }
+    
+    .mobile {
+        height: 800px;
+        position: relative;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(1,200px); /* Responsive grid */
+        gap: 170px; 
+        padding: 10px;
+    }
+    
+    .mobile img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    .mobile p {
+        position: absolute;
+        color: white;
+        margin-top: -290px;
+        z-index: 1;
+    }
+    footer{
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+    }
+    footer ul{
+        display: flex;
+        flex-direction: column;
+        margin-left: 100px;
+    }
+    .loo img{
+        margin-left: 30px;
+    }
+    .social{
+        margin-left: 110px;
+    }
+    .foot p{
+        margin-left: 70px;
+    }
+}
